@@ -1,28 +1,28 @@
 #include<iostream>
 using namespace std;
 vector<int> lcmAndGcd(int a, int b) {
-        // code here
-        int gcd,lcm;
-        int n=a,m=b;
-        while(a!=0 && b!=0){
-            if(a<b){
-                b = b % a;
-            }
-            else if(a>b){
-                a = a % b;
-            }
+    // code here
+    int gcd,lcm;
+    int n=a,m=b;
+    while(a!=0 && b!=0){
+        if(a<b){
+            b = b % a;
         }
-        if(a==0){
-            gcd = b;
+        else if(a>b){
+            a = a % b;
         }
-        if(b==0){
-            gcd = a;
-        }
-        lcm = gcd * (n/gcd) * (m/gcd);
-        vector<int> arr;
-        arr.push_back(lcm);
-        arr.push_back(gcd);
-        return arr;
+    }
+    if(a==0){
+        gcd = b;
+    }
+    if(b==0){
+        gcd = a;
+    }
+    lcm = gcd * (n/gcd) * (m/gcd);
+    vector<int> arr;
+    arr.push_back(lcm);
+    arr.push_back(gcd);
+    return arr;
 }
 
 int main(){

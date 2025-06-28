@@ -1,5 +1,6 @@
 #include<iostream>
 using namespace std;
+
 vector<int> lcmAndGcd(int a, int b) {
     // code here
     int gcd,lcm;

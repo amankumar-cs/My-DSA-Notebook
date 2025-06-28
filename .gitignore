@@ -1,0 +1,11 @@
+# macOS system files
+.DS_Store
+
+# Compiled C/C++ files
+*.out
+*.exe
+*.o
+
+# Backup or temp files
+*~
+*.swp

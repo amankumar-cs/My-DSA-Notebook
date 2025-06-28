@@ -1,11 +1,19 @@
 # macOS system files
 .DS_Store
 
-# Compiled C/C++ files
+# Compiled C/C++ output files (with or without extensions)
 *.out
 *.exe
 *.o
 
+# Executable files with no extension (common C/C++ build outputs)
+# This ignores any file without an extension inside any folder
+**/*/[^.]*       # files without dots (no extension) inside folders
+[^.]*            # files without dots (no extension) at root
+
 # Backup or temp files
 *~
 *.swp
+
+# VSCode settings (optional)
+.vscode/

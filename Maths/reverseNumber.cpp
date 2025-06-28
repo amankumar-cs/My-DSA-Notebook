@@ -8,10 +8,12 @@ int main(){
     int reverseNum = 0;
     while(x!=0){
         int n = x % 10;
-        if (reverseNum > INT_MAX / 10 || (reverseNum == INT_MAX / 10 && n > 7))
+        if (reverseNum > INT_MAX / 10 || (reverseNum == INT_MAX / 10 && n > 7)){
             return 0;
-            if (reverseNum < INT_MIN / 10 || (reverseNum == INT_MIN / 10 && n < -8))
+        }
+        if (reverseNum < INT_MIN / 10 || (reverseNum == INT_MIN / 10 && n < -8)){
             return 0;
+        }
         reverseNum = (reverseNum * 10) + n;
         x /= 10;
     }

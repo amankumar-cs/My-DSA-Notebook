@@ -17,6 +17,6 @@ int main(){
         }
         mpp[curr] = i;
     }
-    cout<<"No sum exists for the given target"<<endl;
+    cout<<"No sum exists for the given target!!"<<endl;
     return 0;
 }

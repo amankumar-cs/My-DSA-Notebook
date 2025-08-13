@@ -15,7 +15,7 @@ int main(){
         }
     }
     if(flag==0){
-        cout<<"No sum exist for the target!!";
+        cout<<"No sum exists for the target!!"<<endl;
     }
     return 0;
 }

@@ -15,4 +15,5 @@ int main(){
         }
     }
     cout<<"The total number of subarrays whose sum equals to k is: "<<count<<endl;
+    return 0;
 }

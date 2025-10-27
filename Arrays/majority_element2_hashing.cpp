@@ -13,6 +13,10 @@ int main(){
             ans.push_back(it.first);
         }
     }
+    if(ans.size()==0){
+        cout<<"There is no majority elements are there in the array!!"<<endl;
+        exit(0);
+    }
     sort(ans.begin(),ans.end());
     cout<<"The majority elements in the given array is: [";
     for(int i=0;i<ans.size()-1;i++){
